@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="h-100" lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
-<body>
+<body class="d-flex flex-column h-100">
     <nav class="py-2 navbar bg-light">
         <div class="container d-flex flex-wrap">
             <ul class="nav me-auto">
                 <li class="nav-item me-lg-3"><a href="https://www.gov.ph" target="_blank" class="nav-link text-dark"
                         aria-current="page">GOVPH</a>
                 </li>
-                <li class="nav-item"><a href="#" class="nav-link text-dark px-2">Profile</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-dark px-2">Home</a></li>
                 <li class="nav-item"><a href="#" class="nav-link text-dark px-2">Services</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-dark px-2">Disclosures</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-dark px-2">Resources</a></li>
             </ul>
             <ul class="nav">
                 <li class="nav-item"><a href="#" class="nav-link text-dark px-2"><i
@@ -40,24 +40,176 @@
             </form>
         </div>
     </header>
-    <main>
-        <div class="container col-xxl-8 px-4 py-5">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="https://getbootstrap.com/docs/5.0/examples/heroes/bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
-                        width="700" height="500" loading="lazy">
-                </div>
-                <div class="col-lg-6">
-                    <h1 class="display-5 fw-bold lh-1 mb-3">Home of the Brave</h1>
-                    <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the
-                        world’s most popular front-end open source toolkit, featuring Sass variables and mixins,
-                        responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+    <main class="flex-shrink-0">
+        <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light">Home of the Brave</h1>
+                    <p class="lead text-body-secondary">Caba is the birth place of the Diego Silang, an Ilocano hero
+                        during the revolution.</p>
                 </div>
             </div>
-        </div>
+        </section>
+        <section class="stories py-5">
+            <div class="container">
+                <h4 class="py-3">Latest Stories</h4>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail"
+                                class="bd-placeholder-img card-img-top" height="225"
+                                preserveAspectRatio="xMidYMid slice" role="img" width="100%"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%"
+                                    fill="#eceeef" dy=".3em"></text>
+                            </svg>
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail"
+                                class="bd-placeholder-img card-img-top" height="225"
+                                preserveAspectRatio="xMidYMid slice" role="img" width="100%"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%"
+                                    fill="#eceeef" dy=".3em"></text>
+                            </svg>
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail"
+                                class="bd-placeholder-img card-img-top" height="225"
+                                preserveAspectRatio="xMidYMid slice" role="img" width="100%"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%"
+                                    fill="#eceeef" dy=".3em"></text>
+                            </svg>
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    <footer class="mt-auto pt-5 pb-3 bg-dark text-light">
+        <div class="container">
+            <div class="row pb-4">
+                <div class="col-6 col-md-2 mb-3">
+                    <h6>Section A</h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-light">Link 1</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-light">Link 2</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-light">Link 3</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-light">Link 4</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-light">Link 5</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h6>Section B</h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-light">Link A</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-light">Link B</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h6>Section C</h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-light">Link 1</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-light">Link 2</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-light">Link 3</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-light">Link 4</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-light">Link 5</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <h6 class="text-center">Need Urgent Help?</h6>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Emergency Hotline</span>
+                        <a href="tel:911" class="text-light fw-bold text-decoration-none">911</a>
+                    </div>
+
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Police Station</span>
+                        <a href="tel:09981234567" class="text-light fw-bold text-decoration-none">0998-123-4567</a>
+                    </div>
+
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Fire Station</span>
+                        <a href="tel:09172345678" class="text-light fw-bold text-decoration-none">0917-234-5678</a>
+                    </div>
+
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Health Care Facility</span>
+                        <a href="tel:0451234567" class="text-light fw-bold text-decoration-none">045-123-4567</a>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <span>Caba District Community Hospital</span>
+                        <a href="tel:0451234567" class="text-light fw-bold text-decoration-none">045-123-4567</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-5 border-top border-secondary">
+                <div class="col-2">
+                    <img src="static/images/govph-logo.png" alt="GOVPH" />
+                </div>
+                <div class="col-4">
+                    <h6>Republic of the Philippines</h6>
+                    <p>All content is in the public domain unless otherwise stated.</p>
+                </div>
+                <div class="col-3">
+                    <h6>About GOVPH</h6>
+                    <p>Learn more about the Philippine government, its structure, how government works and the people
+                        behind it.</p>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-light">GOV.PH</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-light">Open Data Portal</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-light">Official Gazette</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h6>Government Links</h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-light">Office of the
+                                President</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-light">Office of the Vice
+                                President</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-light">Senate of the
+                                Philippines</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-light">House of
+                                Representatives</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-light">Supreme Court</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-light">Court of Appeals</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-light">Sandiganbayan</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4">
+                <p class="mb-0"><small>Developed By Municipal Engineering Office 2026</small></p>
+                <ul class="mb-0 list-unstyled d-flex">
+                    <li class="ms-3"><a class="nav-link link-light" href="https://www.facebook.com/cabalaunionofficial/"
+                            title="@cabalaunionofficial" aria-label="Follow Us"><i
+                                class="bi bi-facebook me-1"></i>Follow Us</a></li>
+                    <li class="ms-3"><a class="nav-link link-light" href="#" aria-label="Bug Report"><i
+                                class="bi bi-bug-fill me-1"></i>Report a Bug</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 </body>
 
