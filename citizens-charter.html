@@ -8,13 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <style>
-        .hero-banner {
-            height: 300px;
-            width: 100%;
-            background: url('static/images/hero_concept_ai.png') center/cover no-repeat;
-        }
-    </style>
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -30,16 +23,16 @@
                     <a class="nav-link text-dark px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">Resources</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="./citizens-charter.html">Citizen's Charter</a></li>
+                        <li><a class="dropdown-item" href="#">Citizens Charter</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
     </nav>
-    <header class="py-2">
+    <header class="py-2 border-bottom">
         <div class="container d-flex align-items-center justify-content-between">
             <a href="./index.html" class="d-flex align-items-center text-dark text-decoration-none">
-                <img src="static/images/logo_alt.png" width="300"/>
+                <img src="static/images/logo_alt.png" width="300" />
             </a>
             <ul class="nav">
                 <li class="nav-item"><a href="#" class="nav-link text-dark px-2"><i
@@ -51,28 +44,36 @@
         </div>
     </header>
     <main class="flex-shrink-0">
-        <section class="hero-banner d-flex align-items-center justify-content-center text-center text-white">
-            <!-- add content if necessary -->
+        <section class="py-5 container">
+            <div class="row">
+                <h3 class="mb-3">Citizen's Charter</h3>
+                <p>You can view the citizens charter of each department by clicking the links below.</p>
+                <div class="col-6">
+                    <ul class="list-unstyled ps-0">
+                        <li><a href="#"><i class="bi bi-arrow-right-circle-fill me-1"></i>Mayor's Office</a></li>
+                        <li><a href="#"><i class="bi bi-arrow-right-circle-fill me-1"></i>Municipal Civil Registrar's
+                                Office</a></li>
+                        <li><a href="#"><i class="bi bi-arrow-right-circle-fill me-1"></i>Municipal Assessor's
+                                Office</a></li>
+                        <li><a href="#"><i class="bi bi-arrow-right-circle-fill me-1"></i>Municipal Accounting
+                                Office</a></li>
+                        <li><a href="#"><i class="bi bi-arrow-right-circle-fill me-1"></i>Municipal Agriculture
+                                Office</a></li>
+                        <li><a href="#"><i class="bi bi-arrow-right-circle-fill me-1"></i>Municipal Engineering
+                                Office</a></li>
+                        <li><a href="#"><i class="bi bi-arrow-right-circle-fill me-1"></i>Municipal Treasury's
+                                Office</a></li>
+                        <li><a href="#"><i class="bi bi-arrow-right-circle-fill me-1"></i>Municipal Social and Welfare
+                                Development Office</a></li>
+                        <li><a href="#"><i class="bi bi-arrow-right-circle-fill me-1"></i>Rural Health Unit</a></li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <section class="stories py-5">
             <div class="container">
                 <h4 class="py-3">Latest Stories</h4>
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
-                    <div class="col">
-                        <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail"
-                                class="bd-placeholder-img card-img-top" height="225"
-                                preserveAspectRatio="xMidYMid slice" role="img" width="100%"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%"
-                                    fill="#eceeef" dy=".3em"></text>
-                            </svg>
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <div class="col">
                         <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail"
                                 class="bd-placeholder-img card-img-top" height="225"
@@ -125,40 +126,42 @@
     <footer class="mt-auto pt-5 pb-3 bg-dark text-light">
         <div class="container">
             <div class="row pb-4">
-                <div class="col-7 mb-3">
-                    <h6>Contact Information</h6>
-                    <dl>
-                        <dd><strong class="me-1">Address:</strong>Municipal Hall, Poblacion Sur, Caba, La Union 2502
-                        </dd>
-                        <dd><strong class="me-1">Telephone:</strong>(072) 610 6943</dd>
-                        <dd><strong class="me-1">Email:</strong>municipalityofcaba@gmail.com</dd>
-                    </dl>
-                </div>
-                <div class="col-5 mb-3">
-                    <h6 class="text-center">Need Urgent Help?</h6>
-                    <div class="d-flex justify-content-between mb-2">
-                        <span>Emergency Hotline</span>
-                        <a href="tel:911" class="text-light fw-bold text-decoration-none">911</a>
+                <div class="row pb-4">
+                    <div class="col-7 mb-3">
+                        <h6>Contact Information</h6>
+                        <dl>
+                            <dd><strong class="me-1">Address:</strong>Municipal Hall, Poblacion Sur, Caba, La Union 2502
+                            </dd>
+                            <dd><strong class="me-1">Telephone:</strong>(072) 610 6943</dd>
+                            <dd><strong class="me-1">Email:</strong>municipalityofcaba@gmail.com</dd>
+                        </dl>
                     </div>
+                    <div class="col-5 mb-3">
+                        <h6 class="text-center">Need Urgent Help?</h6>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Emergency Hotline</span>
+                            <a href="tel:911" class="text-light fw-bold text-decoration-none">911</a>
+                        </div>
 
-                    <div class="d-flex justify-content-between mb-2">
-                        <span>Police Station</span>
-                        <a href="tel:09981234567" class="text-light fw-bold text-decoration-none">0998-123-4567</a>
-                    </div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Police Station</span>
+                            <a href="tel:09981234567" class="text-light fw-bold text-decoration-none">0998-123-4567</a>
+                        </div>
 
-                    <div class="d-flex justify-content-between mb-2">
-                        <span>Fire Station</span>
-                        <a href="tel:09172345678" class="text-light fw-bold text-decoration-none">0917-234-5678</a>
-                    </div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Fire Station</span>
+                            <a href="tel:09172345678" class="text-light fw-bold text-decoration-none">0917-234-5678</a>
+                        </div>
 
-                    <div class="d-flex justify-content-between mb-2">
-                        <span>Health Care Facility</span>
-                        <a href="tel:0451234567" class="text-light fw-bold text-decoration-none">045-123-4567</a>
-                    </div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Health Care Facility</span>
+                            <a href="tel:0451234567" class="text-light fw-bold text-decoration-none">045-123-4567</a>
+                        </div>
 
-                    <div class="d-flex justify-content-between">
-                        <span>Caba District Community Hospital</span>
-                        <a href="tel:0451234567" class="text-light fw-bold text-decoration-none">045-123-4567</a>
+                        <div class="d-flex justify-content-between">
+                            <span>Caba District Community Hospital</span>
+                            <a href="tel:0451234567" class="text-light fw-bold text-decoration-none">045-123-4567</a>
+                        </div>
                     </div>
                 </div>
             </div>

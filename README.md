@@ -1,2 +1,1 @@
-# caba-ss
-static site for the municipality of Caba La Union
+A temporary static website for the Municipality of Caba, La Union, built using plain HTML.
