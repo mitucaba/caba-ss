@@ -10,111 +10,164 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <style>
         .hero-banner {
-            height: 300px;
-            width: 100%;
-            background: url('static/images/hero_concept_ai.png') center/cover no-repeat;
+            background-color: #c0b87a;
+        }
+
+        .accent-color {
+            color: green;
         }
     </style>
 </head>
 
 <body class="d-flex flex-column h-100">
-    <nav class="py-2 navbar bg-light">
-        <div class="container d-flex flex-wrap">
-            <ul class="nav me-auto">
-                <li class="nav-item me-lg-3"><a href="https://www.gov.ph" target="_blank" class="nav-link text-dark"
-                        aria-current="page">GOVPH</a>
-                </li>
-                <li class="nav-item"><a href="./index.html" class="nav-link text-dark px-2">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-dark px-2">Services</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link text-dark px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">Resources</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="./citizens-charter.html">Citizen's Charter</a></li>
-                    </ul>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-2">
+        <div class="container">
+            <a class="navbar-brand d-lg-none" href="./index.html">Menu</a>
+            <div class="d-flex align-items-center gap-2 order-lg-3">
+                <a href="#" class="nav-link text-dark fs-4 p-0" aria-label="Accessibility Options">
+                    <i class="bi bi-universal-access-circle"></i>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse order-lg-2 mt-2 mt-lg-0" id="mainNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item me-lg-3">
+                        <a href="https://www.gov.ph" target="_blank" class="nav-link text-dark">GOVPH</a>
+                    </li>
+                    <li class="nav-item dropdown me-lg-3">
+                        <a class="nav-link text-dark px-2 dropdown-toggle" href="#" id="townDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">The Town</a>
+                        <ul class="dropdown-menu" aria-labelledby="townDropdown">
+                            <li><a class="dropdown-item" href="./history.html">History</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./citizens-charter.html" class="nav-link text-dark px-2">
+                            Citizens Charter Directory
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <header class="py-2">
-        <div class="container d-flex align-items-center justify-content-between">
-            <a href="./index.html" class="d-flex align-items-center text-dark text-decoration-none">
-                <img src="static/images/logo_alt.png" width="300"/>
+        <div class="container d-flex flex-wrap align-items-center justify-content-between">
+            <a href="./index.html" class="d-flex align-items-center text-dark text-decoration-none mb-2 mb-lg-0">
+                <img src="static/images/logo_alt.png" alt="Municipality of Caba La Union" width="250">
             </a>
-            <ul class="nav">
-                <li class="nav-item"><a href="#" class="nav-link text-dark px-2"><i
-                            class="bi bi-telephone-plus me-2"></i>(072) 610 6943</a></li>
-                <li class="nav-item"><a href="mailto:municipalityofcaba@gmail.com"
-                        class="nav-link text-dark text-dark px-2"><i
-                            class="bi bi-envelope-at me-2"></i>municipalityofcaba@gmail.com</a></li>
+            <ul class="nav flex-column flex-lg-row align-items-start align-items-lg-center mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center px-0 px-lg-2 text-dark" href="tel:+639602873348">
+                        <i class="bi bi-telephone-plus me-2"></i> (+63) 960 287 3348
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center px-0 px-lg-2 text-dark"
+                        href="mailto:municipalityofcaba@gmail.com">
+                        <i class="bi bi-envelope-at me-2"></i> municipalityofcaba@gmail.com
+                    </a>
+                </li>
             </ul>
         </div>
     </header>
     <main class="flex-shrink-0">
-        <section class="hero-banner d-flex align-items-center justify-content-center text-center text-white">
-            <!-- add content if necessary -->
-        </section>
-        <section class="stories py-5">
+        <section class="hero-banner d-flex align-items-center justify-content-center">
             <div class="container">
-                <h4 class="py-3">Latest Stories</h4>
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
-                    <div class="col">
-                        <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail"
-                                class="bd-placeholder-img card-img-top" height="225"
-                                preserveAspectRatio="xMidYMid slice" role="img" width="100%"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%"
-                                    fill="#eceeef" dy=".3em"></text>
-                            </svg>
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
+                <img src="./static/images/web_cover_banner_r1.png" class="img-fluid w-100 hero-img" alt="Hero Banner">
+            </div>
+        </section>
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Mission -->
+                    <div class="col-md-6">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body text-center p-4">
+                                <div class="mb-3">
+                                    <i class="bi bi-bullseye fs-1 accent-color"></i>
+                                </div>
+                                <h4 class="fw-semibold">Mission</h4>
+                                <p class="text-muted mt-3">To deliver efficient and effective public services that
+                                    enhance the quality of life for all, fostering sustainable development and a
+                                    thriving local economy through innovation governance.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail"
-                                class="bd-placeholder-img card-img-top" height="225"
-                                preserveAspectRatio="xMidYMid slice" role="img" width="100%"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%"
-                                    fill="#eceeef" dy=".3em"></text>
-                            </svg>
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
+                    <!-- Vision -->
+                    <div class="col-md-6">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body text-center p-4">
+                                <div class="mb-3">
+                                    <i class="bi bi-eye fs-1 accent-color"></i>
+                                </div>
+                                <h4 class="fw-semibold">Vision</h4>
+                                <p class="text-muted mt-3">CABA: <b>G</b>od-guided, <b>G</b>rowing, and <b>B</b>righter
+                                    <b>M</b>unicipality by 2035
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail"
-                                class="bd-placeholder-img card-img-top" height="225"
-                                preserveAspectRatio="xMidYMid slice" role="img" width="100%"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%"
-                                    fill="#eceeef" dy=".3em"></text>
-                            </svg>
+                </div>
+            </div>
+        </section>
+        <section class="py-5">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h5 class="mb-0">Latest Stories</h5>
+                </div>
+                <div class="row g-4">
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card h-100 shadow-sm border-0 position-relative">
+                            <img src="https://placehold.co/600x400" class="card-img-top" alt="Story Image">
                             <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <h5 class="card-title accent-color">Community Outreach Program Launched</h5>
+                                <p class="card-text text-muted small">
+                                    The local government rolls out a new initiative aimed at improving
+                                    access to healthcare services in underserved areas...
+                                </p>
+                                <a href="#" class="stretched-link"></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card shadow-sm"> <svg aria-label="Placeholder: Thumbnail"
-                                class="bd-placeholder-img card-img-top" height="225"
-                                preserveAspectRatio="xMidYMid slice" role="img" width="100%"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%"
-                                    fill="#eceeef" dy=".3em"></text>
-                            </svg>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card h-100 shadow-sm border-0 position-relative">
+                            <img src="https://placehold.co/600x400" class="card-img-top" alt="Story Image">
                             <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <h5 class="card-title accent-color">Infrastructure Projects Ongoing</h5>
+                                <p class="card-text text-muted small">
+                                    Several road and bridge improvements are currently underway to
+                                    enhance connectivity and boost local economic growth...
+                                </p>
+                                <a href="#" class="stretched-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card h-100 shadow-sm border-0 position-relative">
+                            <img src="https://placehold.co/600x400" class="card-img-top" alt="Story Image">
+                            <div class="card-body">
+                                <h5 class="card-title accent-color">Disaster Preparedness Training</h5>
+                                <p class="card-text text-muted small">
+                                    Residents participated in a disaster preparedness seminar to
+                                    strengthen community resilience against natural hazards...
+                                </p>
+                                <a href="#" class="stretched-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card h-100 shadow-sm border-0 position-relative">
+                            <img src="https://placehold.co/600x400" class="card-img-top" alt="Story Image">
+                            <div class="card-body">
+                                <h5 class="card-title accent-color">Youth Development Programs Expanded</h5>
+                                <p class="card-text text-muted small">
+                                    New programs are being introduced to support youth leadership,
+                                    skills training, and community engagement initiatives...
+                                </p>
+                                <a href="#" class="stretched-link"></a>
                             </div>
                         </div>
                     </div>
@@ -125,54 +178,59 @@
     <footer class="mt-auto pt-5 pb-3 bg-dark text-light">
         <div class="container">
             <div class="row pb-4">
-                <div class="col-7 mb-3">
-                    <h6>Contact Information</h6>
-                    <dl>
-                        <dd><strong class="me-1">Address:</strong>Municipal Hall, Poblacion Sur, Caba, La Union 2502
+                <div class="col-12 col-md-6 mb-4">
+                    <h6 class="text-center text-md-start">Contact Information</h6>
+                    <dl class="mb-0">
+                        <dd><strong class="me-1">Address:</strong> Municipal Hall, Poblacion Sur, Caba, La Union 2502
                         </dd>
-                        <dd><strong class="me-1">Telephone:</strong>(072) 610 6943</dd>
-                        <dd><strong class="me-1">Email:</strong>municipalityofcaba@gmail.com</dd>
+                        <dd><strong class="me-1">Telephone:</strong> (+63) 960 287 3348</dd>
+                        <dd><strong class="me-1">Email:</strong> municipalityofcaba@gmail.com</dd>
                     </dl>
                 </div>
-                <div class="col-5 mb-3">
-                    <h6 class="text-center">Need Urgent Help?</h6>
-                    <div class="d-flex justify-content-between mb-2">
-                        <span>Emergency Hotline</span>
-                        <a href="tel:911" class="text-light fw-bold text-decoration-none">911</a>
-                    </div>
-
-                    <div class="d-flex justify-content-between mb-2">
-                        <span>Police Station</span>
-                        <a href="tel:09981234567" class="text-light fw-bold text-decoration-none">0998-123-4567</a>
-                    </div>
-
-                    <div class="d-flex justify-content-between mb-2">
-                        <span>Fire Station</span>
-                        <a href="tel:09172345678" class="text-light fw-bold text-decoration-none">0917-234-5678</a>
-                    </div>
-
-                    <div class="d-flex justify-content-between mb-2">
-                        <span>Health Care Facility</span>
-                        <a href="tel:0451234567" class="text-light fw-bold text-decoration-none">045-123-4567</a>
-                    </div>
-
-                    <div class="d-flex justify-content-between">
-                        <span>Caba District Community Hospital</span>
-                        <a href="tel:0451234567" class="text-light fw-bold text-decoration-none">045-123-4567</a>
+                <div class="col-12 col-md-6 mb-4">
+                    <h6 class="text-center text-md-start">Need Urgent Help?</h6>
+                    <div class="d-flex flex-column gap-2">
+                        <div class="d-flex justify-content-between">
+                            <span>Emergency Hotline</span>
+                            <a href="tel:911" class="text-light fw-bold text-decoration-none">911</a>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span>Police Station</span>
+                            <a href="tel:09981234567" class="text-light fw-bold text-decoration-none">0998-123-4567</a>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span>Fire Station</span>
+                            <a href="tel:09172345678" class="text-light fw-bold text-decoration-none">0917-234-5678</a>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span>Health Care Facility</span>
+                            <a href="tel:0451234567" class="text-light fw-bold text-decoration-none">045-123-4567</a>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span>Caba District Community Hospital</span>
+                            <a href="tel:0451234567" class="text-light fw-bold text-decoration-none">045-123-4567</a>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- Government Info Section -->
             <div class="row py-5 border-top border-secondary">
-                <div class="col-2">
-                    <img src="static/images/govph-logo.png" alt="GOVPH" />
+                <!-- GOVPH Logo + Republic Info as One Component -->
+                <div
+                    class="col-12 col-md-6 d-flex flex-column flex-sm-row align-items-center align-items-sm-start mb-4 mb-md-0">
+                    <div class="me-sm-3 mb-3 mb-sm-0 d-flex justify-content-center justify-content-sm-start">
+                        <img src="static/images/govph-logo.png" alt="GOVPH" class="img-fluid" style="max-width: 80px;">
+                    </div>
+                    <div class="text-center text-sm-start">
+                        <h6 class="mb-1">Republic of the Philippines</h6>
+                        <p class="mb-0">All content is in the public domain unless otherwise stated.</p>
+                    </div>
                 </div>
-                <div class="col-4">
-                    <h6>Republic of the Philippines</h6>
-                    <p>All content is in the public domain unless otherwise stated.</p>
-                </div>
-                <div class="col-3">
+
+                <!-- About GOVPH -->
+                <div class="col-12 col-md-3 mb-4 mb-md-0">
                     <h6>About GOVPH</h6>
-                    <p>Learn more about the Philippine government, its structure, how government works and the people
+                    <p>Learn more about the Philippine government, its structure, how government works, and the people
                         behind it.</p>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-light">GOV.PH</a></li>
@@ -180,7 +238,9 @@
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-light">Official Gazette</a></li>
                     </ul>
                 </div>
-                <div class="col-3">
+
+                <!-- Government Links -->
+                <div class="col-12 col-md-3">
                     <h6>Government Links</h6>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-light">Office of the
@@ -197,14 +257,21 @@
                     </ul>
                 </div>
             </div>
-            <div class="d-flex flex-column flex-sm-row justify-content-between py-4">
-                <p class="mb-0"><small>Developed By Municipal Engineering Office 2026</small></p>
-                <ul class="mb-0 list-unstyled d-flex">
-                    <li class="ms-3"><a class="nav-link link-light" href="https://www.facebook.com/cabalaunionofficial/"
-                            title="@cabalaunionofficial" aria-label="Follow Us"><i
-                                class="bi bi-facebook me-1"></i>Follow Us</a></li>
-                    <li class="ms-3"><a class="nav-link link-light" href="#" aria-label="Bug Report"><i
-                                class="bi bi-bug-fill me-1"></i>Report a Bug</a></li>
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 border-top border-secondary">
+                <p class="mb-3 mb-sm-0"><small>Developed By Municipal Engineering Office v0.1.0</small></p>
+                <ul class="mb-0 list-unstyled d-flex justify-content-center justify-content-sm-end gap-3">
+                    <li>
+                        <a class="nav-link link-light d-flex align-items-center"
+                            href="https://www.facebook.com/cabalaunionofficial/" title="@cabalaunionofficial"
+                            aria-label="Follow Us">
+                            <i class="bi bi-facebook me-1"></i>Follow Us
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link link-light d-flex align-items-center" href="#" aria-label="Bug Report">
+                            <i class="bi bi-bug-fill me-1"></i>Report a Bug
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
