@@ -12,17 +12,17 @@
 </head>
 
 <body class="d-flex flex-column h-100">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-2 sticky-top">
+    <nav class="navbar navbar-expand-lg bg-body-secondary py-2 sticky-top">
         <div class="container">
             <div class="navbar-brand d-lg-none">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                <a class="navbar-toggler text-body" data-bs-toggle="collapse" data-bs-target="#mainNav"
                     aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                    <i class="bi bi-list"></i>
+                </a>
             </div>
             <div class="d-flex align-items-center gap-2 order-lg-3">
                 <div class="dropdown">
-                    <a class="text-dark fs-4 p-0 border-0 bg-transparent dropdown-toggle" type="button"
+                    <a class="text-body fs-4 p-0 border-0 bg-transparent dropdown-toggle" type="button"
                         id="accessibilityMenu" data-bs-toggle="dropdown" aria-expanded="false"
                         aria-label="Accessibility Options">
 
@@ -30,10 +30,6 @@
                     </a>
 
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="accessibilityMenu">
-                        <li>
-                            <a class="dropdown-item" href="#"><i
-                                    class="bi bi-card-heading me-1"></i>Accessibility Statement</a>
-                        </li>
                         <li>
                             <a class="dropdown-item" href="#" onclick="toggleContrast()"><i
                                     class="bi bi-circle-half me-1"></i>Switch Contrast</a>
@@ -52,17 +48,17 @@
             <div class="collapse navbar-collapse order-lg-2 mt-2 mt-lg-0" id="mainNav">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item me-lg-3">
-                        <a href="https://www.gov.ph" target="_blank" class="nav-link text-dark">GOVPH</a>
+                        <a href="https://www.gov.ph" target="_blank" class="nav-link text-body">GOVPH</a>
                     </li>
                     <li class="nav-item dropdown me-lg-3">
-                        <a class="nav-link text-dark px-2 dropdown-toggle" href="#" id="townDropdown"
+                        <a class="nav-link text-body px-2 dropdown-toggle" href="#" id="townDropdown"
                             data-bs-toggle="dropdown" aria-expanded="false">The Town</a>
                         <ul class="dropdown-menu" aria-labelledby="townDropdown">
                             <li><a class="dropdown-item" href="./history.html">History</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="./citizens-charter.html" class="nav-link text-dark px-2">
+                        <a href="./citizens-charter.html" class="nav-link text-body px-2">
                             Citizens Charter Directory
                         </a>
                     </li>
@@ -77,12 +73,12 @@
             </a>
             <ul class="nav flex-column flex-lg-row align-items-start align-items-lg-center mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center px-0 px-lg-2 text-dark" href="tel:+639602873348">
+                    <a class="nav-link d-flex align-items-center px-0 px-lg-2 text-body" href="tel:+639602873348">
                         <i class="bi bi-telephone-plus me-2"></i> (+63) 960 287 3348
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center px-0 px-lg-2 text-dark"
+                    <a class="nav-link d-flex align-items-center px-0 px-lg-2 text-body"
                         href="mailto:municipalityofcaba@gmail.com">
                         <i class="bi bi-envelope-at me-2"></i> municipalityofcaba@gmail.com
                     </a>
@@ -138,12 +134,11 @@
                 <div class="row g-4">
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="card h-100 shadow-sm border-0 position-relative">
-                            <img src="https://placehold.co/600x400" class="card-img-top" alt="Story Image">
+                            <img src="./static/images/stories/cover_1.png" class="card-img-top" alt="Story Image">
                             <div class="card-body">
-                                <h5 class="card-title accent-color">Community Outreach Program Launched</h5>
-                                <p class="card-text text-muted small">
-                                    The local government rolls out a new initiative aimed at improving
-                                    access to healthcare services in underserved areas...
+                                <h5 class="card-title accent-color">Supporting Our Hardworking Farmers!</h5>
+                                <p class="card-text text-muted small">Fuel subsidies were provided to farmers across all barangays in Caba, helping ease the impact of rising fuel costs amid the Middle East crisis.
+                                    Headed by Mayor Genefer Garcia Bulao Madriaga, this initiative reflects our continued commitment to assist our farmers in these challengiing times.
                                 </p>
                                 <a href="#" class="stretched-link"></a>
                             </div>
@@ -151,7 +146,7 @@
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="card h-100 shadow-sm border-0 position-relative">
-                            <img src="./static/images/stories/story_cover_1.jpeg" class="card-img-top" alt="" width="306">
+                            <img src="./static/images/stories/cover_2.png" class="card-img-top" alt="">
                             <div class="card-body">
                                 <h5 class="card-title accent-color">Caba’s Intricately Crafted Float Stuns Crowd</h5>
                                 <p class="card-text text-muted small">Caba’s award-winning float captivated audiences with its intricate details—from hand-crafted ornaments and layered textures to vibrant patterns that beautifully reflected local culture, artistry, and meticulous craftsmanship.</p>
@@ -161,26 +156,20 @@
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="card h-100 shadow-sm border-0 position-relative">
-                            <img src="https://placehold.co/600x400" class="card-img-top" alt="Story Image">
+                            <img src="./static/images/stories/cover_3.png" class="card-img-top" alt="Story Image">
                             <div class="card-body">
-                                <h5 class="card-title accent-color">Disaster Preparedness Training</h5>
-                                <p class="card-text text-muted small">
-                                    Residents participated in a disaster preparedness seminar to
-                                    strengthen community resilience against natural hazards...
-                                </p>
+                                <h5 class="card-title accent-color">One Step Toward A Debt Free Caba</h5>
+                                <p class="card-text text-muted small">Mayor Madriaga has officially settled the town's P15,938,710.77 financial obligation and loan balance on its Php 25M loan under Promissory Note No. 2024-046(June 13, 2024). Upon taking her oath, the mayor made a firm commitment to lead Caba toward a financial freedom - and true to her word, we see the start of that promise fulfilled.</p>
                                 <a href="#" class="stretched-link"></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="card h-100 shadow-sm border-0 position-relative">
-                            <img src="https://placehold.co/600x400" class="card-img-top" alt="Story Image">
+                            <img src="./static/images/stories/cover_4.png" class="card-img-top" alt="Story Image">
                             <div class="card-body">
-                                <h5 class="card-title accent-color">Youth Development Programs Expanded</h5>
-                                <p class="card-text text-muted small">
-                                    New programs are being introduced to support youth leadership,
-                                    skills training, and community engagement initiatives...
-                                </p>
+                                <h5 class="card-title accent-color">BRP Diego Silang (FFG-07): Philippine Navy’s Newest Guided Missile Frigate</h5>
+                                <p class="card-text text-muted small">Held at Naval Operating Base Subic in December 2025, the commissioning of BRP Diego Silang (FFG-07) gathered key officials and distinguished guests—including Mayor Madriaga—to witness the Philippine Navy’s newest guided missile frigate officially enter service.</p>
                                 <a href="#" class="stretched-link"></a>
                             </div>
                         </div>
