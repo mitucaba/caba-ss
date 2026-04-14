@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html class="h-100" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./static/styles/common.css">
+</head>
+
+<body class="d-flex flex-column h-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2 sticky-top">
+        <div class="container">
+
+            <!-- Mobile Toggle -->
+            <div class="navbar-brand d-lg-none">
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="bi bi-list text-white fs-3"></i>
+                </button>
+            </div>
+
+            <!-- Accessibility -->
+            <div class="d-flex align-items-center gap-2 order-lg-3">
+                <div class="dropdown">
+                    <button class="text-white fs-4 p-0 border-0 bg-transparent dropdown-toggle" id="accessibilityMenu"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-label="Accessibility Options">
+                        <i class="bi bi-universal-access-circle"></i>
+                    </button>
+
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li>
+                            <a class="dropdown-item" href="#" onclick="toggleContrast()">
+                                <i class="bi bi-circle-half me-1"></i>Switch Contrast
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#" onclick="scrollToTop()">
+                                <i class="bi bi-box-arrow-in-up me-1"></i>Page Up
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#" onclick="scrollToBottom()">
+                                <i class="bi bi-box-arrow-in-down me-1"></i>Page Down
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Nav Links -->
+            <div class="collapse navbar-collapse order-lg-2 mt-2 mt-lg-0" id="mainNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item me-lg-3">
+                        <a href="https://www.gov.ph" target="_blank" class="nav-link text-white">
+                            GOVPH
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown me-lg-3">
+                        <a class="nav-link text-white px-2 dropdown-toggle" href="#" id="townDropdown"
+                            data-bs-toggle="dropdown">
+                            The Town
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./history.html">History</a></li>
+                            <li><a class="dropdown-item" href="./otop.html">One Product</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./citizens-charter.html" class="nav-link text-white px-2">
+                            Citizens Charter Directory
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <header class="py-2">
+        <div class="container d-flex flex-wrap align-items-center justify-content-between">
+            <a href="./index.html" class="d-flex align-items-center text-dark text-decoration-none mb-2 mb-lg-0">
+                <img src="static/images/logo_alt.png" id="hseal" alt="Municipality of Caba La Union">
+            </a>
+            <ul
+                class="nav flex-column flex-lg-row align-items-start align-items-lg-center mb-2 mb-lg-0 d-none d-md-flex">
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center px-0 px-lg-2 text-body" href="tel:+639602873348">
+                        <i class="bi bi-telephone-plus me-2"></i> (+63) 960 287 3348
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center px-0 px-lg-2 text-body"
+                        href="mailto:municipalityofcaba@gmail.com">
+                        <i class="bi bi-envelope-at me-2"></i> municipalityofcaba@gmail.com
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="flex-shrink-0">
+        <section class="hero-banner d-flex align-items-center justify-content-center">
+            <div class="container">
+                <img src="./static/images/web_cover_banner_r1.png" class="img-fluid w-100 hero-img" alt="Hero Banner">
+            </div>
+        </section>
+        <style>
+            .org-line {
+                width: 2px;
+                height: 40px;
+                background-color: #ccc;
+                margin: 0 auto;
+            }
+
+            .profile-img {
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+            }
+
+            .org-card {
+                max-width: 300px;
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .sprite {
+                background-image: url('./static/images/officials/sprite.png');
+                background-repeat: no-repeat;
+                width: 200px;
+                height: 200px;
+                display: inline-block;
+            }
+
+            .sprite-1 {
+                background-position: 0px 0;
+            }
+
+            .sprite-2 {
+                background-position: -200px 0;
+            }
+
+            .sprite-3 {
+                background-position: -400px 0;
+            }
+
+            .sprite-4 {
+                background-position: -600px 0;
+            }
+
+            .sprite-5 {
+                background-position: -800px 0;
+            }
+
+            .sprite-6 {
+                background-position: -1000px 0;
+            }
+
+            .sprite-7 {
+                background-position: -1200px 0;
+            }
+
+            .sprite-8 {
+                background-position: -1400px 0;
+            }
+
+            .sprite-9 {
+                background-position: -1600px 0;
+            }
+
+            .sprite-10 {
+                background-position: -1800px 0;
+            }
+
+            .sprite-11 {
+                background-position: -2000px 0;
+            }
+
+            .sprite-12 {
+                background-position: -2200px 0;
+            }
+        </style>
+
+        <section class="py-5">
+            <div class="container text-center">
+                <h3 class="mb-5">Municipal Officials</h3>
+                <div class="mb-5">
+                    <div class="card shadow-sm org-card">
+                        <div class="card-body text-center">
+                            <div class="sprite sprite-1"></div>
+                            <h6 class="mb-0 accent-color">Hon. Genefer G. Bulao-Madriaga</h6>
+                            <small class="text-muted">Municipal Mayor</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="org-line"></div>
+                </div>
+                <div class="mb-5">
+                    <div class="card shadow-sm org-card">
+                        <div class="card-body text-center">
+                            <div class="sprite sprite-2"></div>
+                            <h6 class="mb-0 accent-color">Hon. Conrado A. Vito</h6>
+                            <small class="text-muted">Vice Mayor</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="org-line"></div>
+                </div>
+                <div class="row g-3 justify-content-center">
+                    <div class="col-6 d-flex justify-content-center">
+                        <div class="card shadow-sm org-card">
+                            <div class="card-body text-center">
+                                <div class="sprite sprite-5"></div>
+                                <h6 class="mb-0 accent-color">Hon. Ronnie P. Mangaser</h6>
+                                <small class="text-muted">Sangguniang Bayan Member</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 d-flex justify-content-center">
+                        <div class="card shadow-sm org-card">
+                            <div class="card-body text-center">
+                                <div class="sprite sprite-4"></div>
+                                <h6 class="mb-0 accent-color">Hon. Carl Christian R. Divinagracia</h6>
+                                <small class="text-muted">Sangguniang Bayan Member</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 d-flex justify-content-center">
+                        <div class="card shadow-sm org-card">
+                            <div class="card-body text-center">
+                                <div class="sprite sprite-3"></div>
+                                <h6 class="mb-0 accent-color">Hon. Robert Nillusguin</h6>
+                                <small class="text-muted">Sangguniang Bayan Member</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 d-flex justify-content-center">
+                        <div class="card shadow-sm org-card">
+                            <div class="card-body text-center">
+                                <div class="sprite sprite-6"></div>
+                                <h6 class="mb-0 accent-color">Hon. Joseph R. Maglaya</h6>
+                                <small class="text-muted">Sangguniang Bayan Member</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 d-flex justify-content-center">
+                        <div class="card shadow-sm org-card">
+                            <div class="card-body text-center">
+                                <div class="sprite sprite-7"></div>
+                                <h6 class="mb-0 accent-color">Hon. Imelda D. Vallejo</h6>
+                                <small class="text-muted">Sangguniang Bayan Member</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 d-flex justify-content-center">
+                        <div class="card shadow-sm org-card">
+                            <div class="card-body text-center">
+                                <div class="sprite sprite-8"></div>
+                                <h6 class="mb-0 accent-color">Hon. Pacquito Maglaya</h6>
+                                <small class="text-muted">Sangguniang Bayan Member</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 d-flex justify-content-center">
+                        <div class="card shadow-sm org-card">
+                            <div class="card-body text-center">
+                                <div class="sprite sprite-9"></div>
+                                <h6 class="mb-0 accent-color">Hon. Raffy Oyando</h6>
+                                <small class="text-muted">Sangguniang Bayan Member</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 d-flex justify-content-center">
+                        <div class="card shadow-sm org-card">
+                            <div class="card-body text-center">
+                                <div class="sprite sprite-10"></div>
+                                <h6 class="mb-0 accent-color">Hon. Tito Torres</h6>
+                                <small class="text-muted">Sangguniang Bayan Member</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 d-flex justify-content-center">
+                        <div class="card shadow-sm org-card">
+                            <div class="card-body text-center">
+                                <div class="sprite sprite-11"></div>
+                                <h6 class="mb-0 accent-color">Hon. Wilson Q. Vergara</h6>
+                                <small class="text-muted">ABC President</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 d-flex justify-content-center">
+                        <div class="card shadow-sm org-card">
+                            <div class="card-body text-center">
+                                <div class="sprite sprite-12"></div>
+                                <h6 class="mb-0 accent-color">Hon. Abbegail B. Ramos</h6>
+                                <small class="text-muted">PPSK President</small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer class="mt-auto pt-5 pb-3 bg-dark text-light">
+        <div class="container">
+            <div class="row pb-4">
+                <div class="col-12 col-md-6 mb-4">
+                    <h6 class="text-center text-md-start">Contact Information</h6>
+                    <dl class="mb-0">
+                        <dd><strong class="me-1">Address:</strong> Municipal Hall, Poblacion Sur, Caba, La Union 2502
+                        </dd>
+                        <dd><strong class="me-1">Telephone:</strong> (+63) 960 287 3348</dd>
+                        <dd><strong class="me-1">Email:</strong> municipalityofcaba@gmail.com</dd>
+                    </dl>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                    <h6 class="text-center text-md-start">Need Urgent Help?</h6>
+                    <div class="d-flex flex-column gap-2">
+                        <div class="d-flex justify-content-between">
+                            <span>Emergency Hotline</span>
+                            <a href="tel:911" class="text-light fw-bold text-decoration-none">911</a>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span>Police Station</span>
+                            <a href="tel:09171271706" class="text-light fw-bold text-decoration-none">0917 127 1706</a>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span>Fire Station</span>
+                            <a href="tel:09178405664" class="text-light fw-bold text-decoration-none">0917 840 5664</a>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span>MDRRMO</span>
+                            <a href="tel:0451234567" class="text-light fw-bold text-decoration-none">0915 247 3936</a>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span>Caba District Community Hospital</span>
+                            <a href="tel:09125559918" class="text-light fw-bold text-decoration-none">0912 555 9918</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Government Info Section -->
+            <div class="row py-5 border-top border-secondary">
+                <!-- GOVPH Logo + Republic Info as One Component -->
+                <div
+                    class="col-12 col-md-6 d-flex flex-column flex-sm-row align-items-center align-items-sm-start mb-4 mb-md-0">
+                    <div class="me-sm-3 mb-3 mb-sm-0 d-flex justify-content-center justify-content-sm-start">
+                        <img src="static/images/govph-logo.png" alt="GOVPH" class="img-fluid" style="max-width: 80px;">
+                    </div>
+                    <div class="text-center text-sm-start">
+                        <h6 class="mb-1">Republic of the Philippines</h6>
+                        <p class="mb-0">All content is in the public domain unless otherwise stated.</p>
+                    </div>
+                </div>
+
+                <!-- About GOVPH -->
+                <div class="col-12 col-md-3 mb-4 mb-md-0">
+                    <h6>About GOVPH</h6>
+                    <p>Learn more about the Philippine government, its structure, how government works, and the people
+                        behind it.</p>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="https://www.gov.ph/"
+                                class="nav-link p-0 link-light">GOV.PH</a></li>
+                        <li class="nav-item mb-2"><a href="https://data.gov.ph/index/home"
+                                class="nav-link p-0 link-light">Open Data Portal</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.officialgazette.gov.ph/"
+                                class="nav-link p-0 link-light">Official Gazette</a></li>
+                    </ul>
+                </div>
+
+                <!-- Government Links -->
+                <div class="col-12 col-md-3">
+                    <h6>Government Links</h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="https://op-proper.gov.ph/"
+                                class="nav-link p-0 link-light">Office of the
+                                President</a></li>
+                        <li class="nav-item mb-2"><a href="https://ovp.gov.ph/" class="nav-link p-0 link-light">Office
+                                of the Vice
+                                President</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.senate.gov.ph/"
+                                class="nav-link p-0 link-light">Senate of the
+                                Philippines</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.congress.gov.ph/"
+                                class="nav-link p-0 link-light">House of
+                                Representatives</a></li>
+                        <li class="nav-item mb-2"><a href="https://sc.judiciary.gov.ph/"
+                                class="nav-link p-0 link-light">Supreme Court</a></li>
+                        <li class="nav-item mb-2"><a href="https://ca.judiciary.gov.ph/"
+                                class="nav-link p-0 link-light">Court of Appeals</a></li>
+                        <li class="nav-item mb-2"><a href="https://sb.judiciary.gov.ph/"
+                                class="nav-link p-0 link-light">Sandiganbayan</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 border-top border-secondary">
+                <p class="mb-3 mb-sm-0"><small>Developed By Municipal Engineering Office v0.1.0</small></p>
+                <ul class="mb-0 list-unstyled d-flex justify-content-center justify-content-sm-end gap-3">
+                    <li>
+                        <a class="nav-link link-light d-flex align-items-center"
+                            href="https://www.facebook.com/cabalaunionofficial/" title="@cabalaunionofficial"
+                            aria-label="Follow Us">
+                            <i class="bi bi-facebook me-1"></i>Follow Us
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link link-light d-flex align-items-center" href="#" aria-label="Bug Report">
+                            <i class="bi bi-bug-fill me-1"></i>Report a Bug
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link link-light d-flex align-items-center" href="#" onclick="scrollToTop()"
+                            aria-label="Back Top">
+                            <i class="bi bi-arrow-up"></i>Back Top
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="./static/scripts/common.js"></script>
+</body>
+
+</html>
