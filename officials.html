@@ -70,6 +70,7 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="./history.html">History</a></li>
                             <li><a class="dropdown-item" href="./otop.html">One Product</a></li>
+                            <li><a class="dropdown-item" href="./officials.html">Our Officials</a></li>
                         </ul>
                     </li>
 
@@ -132,69 +133,29 @@
             }
 
             .sprite {
+                --frames: 12;
+                --index: 0;
+                margin: 0 auto 12px;
+
+                width: 100%;
+                max-width: 200px;
+                aspect-ratio: 1 / 1;
+
                 background-image: url('./static/images/officials/sprite.png');
                 background-repeat: no-repeat;
-                width: 200px;
-                height: 200px;
-                display: inline-block;
-            }
-
-            .sprite-1 {
-                background-position: 0px 0;
-            }
-
-            .sprite-2 {
-                background-position: -200px 0;
-            }
-
-            .sprite-3 {
-                background-position: -400px 0;
-            }
-
-            .sprite-4 {
-                background-position: -600px 0;
-            }
-
-            .sprite-5 {
-                background-position: -800px 0;
-            }
-
-            .sprite-6 {
-                background-position: -1000px 0;
-            }
-
-            .sprite-7 {
-                background-position: -1200px 0;
-            }
-
-            .sprite-8 {
-                background-position: -1400px 0;
-            }
-
-            .sprite-9 {
-                background-position: -1600px 0;
-            }
-
-            .sprite-10 {
-                background-position: -1800px 0;
-            }
-
-            .sprite-11 {
-                background-position: -2000px 0;
-            }
-
-            .sprite-12 {
-                background-position: -2200px 0;
+                background-size: calc(var(--frames) * 100%) 100%;
+                background-position: calc((var(--index) / (var(--frames) - 1)) * 100%) 0;
             }
         </style>
 
         <section class="py-5">
             <div class="container text-center">
-                <h3 class="mb-5">Municipal Officials</h3>
+                <h3>Your Local Executive Officials</h3>
+                <p class="lead mb-5">Bringing the government, closer to the people</p>
                 <div class="mb-5">
                     <div class="card shadow-sm org-card">
                         <div class="card-body text-center">
-                            <div class="sprite sprite-1"></div>
+                            <div class="sprite" style="--index:0"></div>
                             <h6 class="mb-0 accent-color">Hon. Genefer G. Bulao-Madriaga</h6>
                             <small class="text-muted">Municipal Mayor</small>
                         </div>
@@ -206,7 +167,7 @@
                 <div class="mb-5">
                     <div class="card shadow-sm org-card">
                         <div class="card-body text-center">
-                            <div class="sprite sprite-2"></div>
+                            <div class="sprite" style="--index:1"></div>
                             <h6 class="mb-0 accent-color">Hon. Conrado A. Vito</h6>
                             <small class="text-muted">Vice Mayor</small>
                         </div>
@@ -219,7 +180,7 @@
                     <div class="col-6 d-flex justify-content-center">
                         <div class="card shadow-sm org-card">
                             <div class="card-body text-center">
-                                <div class="sprite sprite-5"></div>
+                                <div class="sprite" style="--index:4"></div>
                                 <h6 class="mb-0 accent-color">Hon. Ronnie P. Mangaser</h6>
                                 <small class="text-muted">Sangguniang Bayan Member</small>
                             </div>
@@ -229,7 +190,7 @@
                     <div class="col-6 d-flex justify-content-center">
                         <div class="card shadow-sm org-card">
                             <div class="card-body text-center">
-                                <div class="sprite sprite-4"></div>
+                                <div class="sprite" style="--index:3"></div>
                                 <h6 class="mb-0 accent-color">Hon. Carl Christian R. Divinagracia</h6>
                                 <small class="text-muted">Sangguniang Bayan Member</small>
                             </div>
@@ -239,8 +200,8 @@
                     <div class="col-6 d-flex justify-content-center">
                         <div class="card shadow-sm org-card">
                             <div class="card-body text-center">
-                                <div class="sprite sprite-3"></div>
-                                <h6 class="mb-0 accent-color">Hon. Robert Nillusguin</h6>
+                                <div class="sprite" style="--index:2"></div>
+                                <h6 class="mb-0 accent-color">Hon. Robert P. Nillusguin</h6>
                                 <small class="text-muted">Sangguniang Bayan Member</small>
                             </div>
                         </div>
@@ -249,7 +210,7 @@
                     <div class="col-6 d-flex justify-content-center">
                         <div class="card shadow-sm org-card">
                             <div class="card-body text-center">
-                                <div class="sprite sprite-6"></div>
+                                <div class="sprite" style="--index:5"></div>
                                 <h6 class="mb-0 accent-color">Hon. Joseph R. Maglaya</h6>
                                 <small class="text-muted">Sangguniang Bayan Member</small>
                             </div>
@@ -259,7 +220,7 @@
                     <div class="col-6 d-flex justify-content-center">
                         <div class="card shadow-sm org-card">
                             <div class="card-body text-center">
-                                <div class="sprite sprite-7"></div>
+                                <div class="sprite" style="--index:6"></div>
                                 <h6 class="mb-0 accent-color">Hon. Imelda D. Vallejo</h6>
                                 <small class="text-muted">Sangguniang Bayan Member</small>
                             </div>
@@ -269,8 +230,8 @@
                     <div class="col-6 d-flex justify-content-center">
                         <div class="card shadow-sm org-card">
                             <div class="card-body text-center">
-                                <div class="sprite sprite-8"></div>
-                                <h6 class="mb-0 accent-color">Hon. Pacquito Maglaya</h6>
+                                <div class="sprite" style="--index:7"></div>
+                                <h6 class="mb-0 accent-color">Hon. Pacquito R. Maglaya Jr.</h6>
                                 <small class="text-muted">Sangguniang Bayan Member</small>
                             </div>
                         </div>
@@ -279,8 +240,8 @@
                     <div class="col-6 d-flex justify-content-center">
                         <div class="card shadow-sm org-card">
                             <div class="card-body text-center">
-                                <div class="sprite sprite-9"></div>
-                                <h6 class="mb-0 accent-color">Hon. Raffy Oyando</h6>
+                                <div class="sprite" style="--index:8"></div>
+                                <h6 class="mb-0 accent-color">Hon. Raffy I. Oyando</h6>
                                 <small class="text-muted">Sangguniang Bayan Member</small>
                             </div>
                         </div>
@@ -289,8 +250,8 @@
                     <div class="col-6 d-flex justify-content-center">
                         <div class="card shadow-sm org-card">
                             <div class="card-body text-center">
-                                <div class="sprite sprite-10"></div>
-                                <h6 class="mb-0 accent-color">Hon. Tito Torres</h6>
+                                <div class="sprite" style="--index:9"></div>
+                                <h6 class="mb-0 accent-color">Hon. Tito B. Torres</h6>
                                 <small class="text-muted">Sangguniang Bayan Member</small>
                             </div>
                         </div>
@@ -299,7 +260,7 @@
                     <div class="col-6 d-flex justify-content-center">
                         <div class="card shadow-sm org-card">
                             <div class="card-body text-center">
-                                <div class="sprite sprite-11"></div>
+                                <div class="sprite" style="--index:10"></div>
                                 <h6 class="mb-0 accent-color">Hon. Wilson Q. Vergara</h6>
                                 <small class="text-muted">ABC President</small>
                             </div>
@@ -309,7 +270,7 @@
                     <div class="col-6 d-flex justify-content-center">
                         <div class="card shadow-sm org-card">
                             <div class="card-body text-center">
-                                <div class="sprite sprite-12"></div>
+                                <div class="sprite" style="--index:11"></div>
                                 <h6 class="mb-0 accent-color">Hon. Abbegail B. Ramos</h6>
                                 <small class="text-muted">PPSK President</small>
                             </div>
@@ -327,7 +288,7 @@
                 <div class="col-12 col-md-6 mb-4">
                     <h6 class="text-center text-md-start">Contact Information</h6>
                     <dl class="mb-0">
-                        <dd><strong class="me-1">Address:</strong> Municipal Hall, Poblacion Sur, Caba, La Union 2502
+                        <dd><strong class="me-1">Address:</strong> Estalilla Street, Poblacion Norte, Caba, La Union, 2502
                         </dd>
                         <dd><strong class="me-1">Telephone:</strong> (+63) 960 287 3348</dd>
                         <dd><strong class="me-1">Email:</strong> municipalityofcaba@gmail.com</dd>
